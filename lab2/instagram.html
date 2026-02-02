@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Instagram</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* главный блок */
+.container{
+    display:flex;
+    align-items:center;
+    gap:80px;
+}
+
+/* ЛЕВАЯ ЧАСТЬ */
+.left{
+    text-align:center;
+}
+
+.left h1{
+    font-size:36px;
+    font-weight:500;
+    margin-bottom:30px;
+}
+
+.left img{
+    width:420px;
+}
+
+/* вертикальная линия */
+.line{
+    width:1px;
+    height:520px;
+    background:#e0e0e0;
+}
+
+/* ПРАВАЯ ЧАСТЬ */
+.login-box{
+    width:360px;
+}
+
+.title{
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+/* инпуты */
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:25px;
+    font-size:14px;
+}
+
+/* кнопка входа */
+.login-btn{
+    width:100%;
+    padding:14px;
+    background:#9ec5ff;
+    border:none;
+    border-radius:25px;
+    margin-top:6px;
+}
+
+/* ссылки */
+a{
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    font-size:14px;
+    color:#1877f2;
+    text-decoration:none;
+}
+
+/* кнопки снизу */
+.fb-btn{
+    margin-top:20px;
+    padding:12px;
+    border-radius:25px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.create-btn{
+    margin-top:10px;
+    padding:12px;
+    border-radius:25px;
+    border:2px solid #1877f2;
+    text-align:center;
+    color:#1877f2;
+}
+
+.meta{
+    text-align:center;
+    margin-top:25px;
+    color:gray;
+    font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ЛЕВАЯ СТОРОНА -->
+    <div class="left">
+        <h1>
+            Посмотрите, какими моментами из жизни<br>
+            поделились ваши <span style="color:#ff3b7f;">близкие друзья</span>.
+        </h1>
+
+        <img src="123.png" alt="">
+    </div>
+
+    <!-- линия -->
+    <div class="line"></div>
+
+    <!-- ПРАВАЯ СТОРОНА -->
+    <div class="login-box">
+
+        <div class="title">Войти в Instagram</div>
+
+        <input placeholder="Имя пользователя, номер телефона или email">
+        <input type="password" placeholder="Пароль">
+
+        <button class="login-btn">Войти</button>
+
+        <a href="#">Забыли пароль?</a>
+
+        <div class="fb-btn">Войти через Facebook</div>
+        <div class="create-btn">Создать новый аккаунт</div>
+
+        <div class="meta">Meta</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
