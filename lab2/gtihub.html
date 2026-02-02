@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GitHub Pricing</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f6f8fa;
+    text-align:center;
+}
+
+/* ===== HEADER ===== */
+
+.header{
+    margin-top:70px;
+}
+
+.header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#57606a;
+}
+
+.top-btn{
+    margin-top:20px;
+    padding:12px 20px;
+    background:#24292f;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+/* ===== CARDS WRAPPER ===== */
+
+.cards{
+    margin-top:60px;
+
+    display:flex;
+    justify-content:center;
+    gap:28px;
+}
+
+/* ===== CARD ===== */
+
+.card{
+    width:310px;
+    background:white;
+    border:1px solid #d0d7de;
+    border-radius:12px;
+    padding:24px;
+    text-align:left;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    text-align:center;
+    margin:0;
+}
+
+.price{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    margin:12px 0;
+}
+
+/* кнопка внутри */
+.card button{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:none;
+    background:#24292f;
+    color:white;
+    margin-bottom:15px;
+}
+
+/* список */
+ul{
+    padding-left:18px;
+    font-size:14px;
+    color:#24292f;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+/* ===== ENTERPRISE (синяя рамка) ===== */
+
+.highlight{
+    border:3px solid #2f81f7;
+    position:relative;
+}
+
+/* бейдж recommended */
+.badge{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#2f81f7;
+    color:white;
+    font-size:12px;
+    padding:4px 12px;
+    border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Try the Copilot-powered platform</h1>
+    <p>Choose the plan that fits your needs</p>
+    <button class="top-btn">Start free for 30 days</button>
+</div>
+
+
+<!-- CARDS -->
+<div class="cards">
+
+    <!-- FREE -->
+    <div class="card">
+        <h3>Free</h3>
+        <div class="price">$0 USD</div>
+
+        <button>Join for free</button>
+
+        <ul>
+            <li>Unlimited repositories</li>
+            <li>Community support</li>
+            <li>Issues & Projects</li>
+            <li>Actions minutes</li>
+        </ul>
+    </div>
+
+
+    <!-- TEAM -->
+    <div class="card">
+        <h3>Team</h3>
+        <div class="price">$4 USD</div>
+
+        <button>Continue with Team</button>
+
+        <ul>
+            <li>Everything in Free</li>
+            <li>Access control</li>
+            <li>Pull requests</li>
+            <li>Team management</li>
+        </ul>
+    </div>
+
+
+    <!-- ENTERPRISE -->
+    <div class="card highlight">
+
+        <div class="badge">RECOMMENDED</div>
+
+        <h3>Enterprise</h3>
+        <div class="price">$21 USD</div>
+
+        <button>Start a free trial</button>
+
+        <ul>
+            <li>Everything in Team</li>
+            <li>Advanced security</li>
+            <li>Audit logs</li>
+            <li>Enterprise support</li>
+            <li>SSO & SAML</li>
+        </ul>
+    </div>
+
+</div>
+
+
+</body>
+</html>
