@@ -1,0 +1,45 @@
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-logo {
+  height: 60px;
+}
+
+.category-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.category-bar button {
+  background: white;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+
+.category-bar button:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #f8fbff;
+  color: #2563eb;
+
+  box-shadow:
+    0 0 6px #3b82f6,
+    0 0 12px #3b82f6,
+    0 0 20px #3b82f6,
+    inset 0 0 6px #3b82f6;
+}
+
+.category-bar button:active {
+  transform: translateY(-1px) scale(0.98);
+}

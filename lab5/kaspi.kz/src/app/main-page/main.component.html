@@ -1,0 +1,13 @@
+<div class="big-logo-container">
+  <img src="https://kaspi.kz/img/main_logo.svg" class="big-logo">
+</div>
+
+<h1 class="title">Продукты Kaspi.kz</h1>
+
+
+<section class="products-container">
+  <app-product
+    *ngFor="let p of productInfoList"
+    [productInfo]="p">
+  </app-product>
+</section>

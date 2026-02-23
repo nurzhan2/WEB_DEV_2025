@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+  body {
+    background-color: #f5f6f8;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  :root {
+    --primary-color: #605DC8;
+    --secondary-color: #8B89E6;
+    --accent-color: #e8e7fa;
+    --shadow-color: #E8E8E8;
+  }
+  h1 {
+  text-align: center;
+  margin-top: 40px;
+  }
+  .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 140px;
+}
+.big-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.big-logo {
+  width: 600px;   
+}
+.title {
+  text-align: center;
+  margin-top: 10px;
+}

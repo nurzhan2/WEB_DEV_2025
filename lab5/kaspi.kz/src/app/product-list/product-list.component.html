@@ -1,0 +1,7 @@
+<div class="product-grid">
+  <product-item
+    *ngFor="let p of products"
+    [product]="p"
+    (delete)="remove($event)">
+  </product-item>
+</div>

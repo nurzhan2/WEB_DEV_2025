@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.results {
+  background: transparent;
+}
+@media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sort-button {
+    margin-top: 20px;
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 25px;   
+  row-gap: 50px;      
+  padding: 40px;
+}
