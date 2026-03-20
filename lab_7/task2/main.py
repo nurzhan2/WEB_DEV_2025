@@ -2,9 +2,11 @@ from models import Animal, Dog, Cat
 
 
 def main():
-    animal = Animal("Generic Animal", 5, "gray")
-    dog = Dog("Buddy", 3, "brown", "Labrador")
-    cat = Cat("Misty", 2, "white", 9)
+    animal = Animal("Generic Animal", 5, "gray" , "cfjcio")
+    dog = Dog("Buddy", 3, "brown" , "labrador")
+    cat = Cat("Misty", 2, "white", 9 , "hdcioe")
+
+    print( dog.breed)
 
     animals = [animal, dog, cat]
 
@@ -19,6 +21,10 @@ def main():
             print(a.climb())
 
         print("-" * 40)
+
+        
+        print( a.breed)
+    
 
 
 if __name__ == "__main__":

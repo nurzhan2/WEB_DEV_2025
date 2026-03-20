@@ -1,8 +1,9 @@
 class Animal:
-    def __init__(self, name, age, color):
+    def __init__(self, name, age, color , breed):
         self.name = name
-        self.age = age
+        self.age = age 
         self.color = color
+        self.breed = breed
 
     def speak(self):
         return f"{self.name} makes a sound."
@@ -16,8 +17,8 @@ class Animal:
 
 class Dog(Animal):
     def __init__(self, name, age, color, breed):
-        super().__init__(name, age, color)
-        self.breed = breed
+        super().__init__(name, age, color, breed)
+
 
     def speak(self):
         return f"{self.name} says: Woof!"
@@ -30,8 +31,8 @@ class Dog(Animal):
 
 
 class Cat(Animal):
-    def __init__(self, name, age, color, lives_left):
-        super().__init__(name, age, color)
+    def __init__(self, name, age, color, lives_left , breed):
+        super().__init__(name, age, color, breed)
         self.lives_left = lives_left
 
     def speak(self):
